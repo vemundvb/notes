@@ -1,0 +1,33 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+.cloze .cloze-span,
+.cloze mark,
+.cloze u,
+.cloze strong {
+    cursor: pointer;
+}
+
+.cloze-span,
+.cloze u,
+.cloze strong {
+    border-bottom: 1px solid var(--text-normal);
+}
+
+[data-mark-hide=true] {
+	color: transparent !important;
+	text-shadow: none !important;
+}
+
+/* embedded segs */
+[data-mark-hide=true] mark,
+[data-mark-hide=true] u,
+[data-mark-hide=true] strong {
+	color: transparent !important;
+	text-shadow: none !important;
+}
